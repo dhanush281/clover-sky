@@ -540,3 +540,6 @@ $(call inherit-product, vendor/bcr/bcr.mk)
 
 # Viper4fx
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
+# Dex
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
