@@ -398,7 +398,7 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
-    hardware/clover/interfaces/power-libperfmgr \
+    hardware/pixelage/interfaces/power-libperfmgr \
     hardware/google \
     hardware/google/interfaces \
     hardware/google/pixel \
@@ -524,7 +524,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libnl:64 \
     libwfdaac_vendor:64
-	
+
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
