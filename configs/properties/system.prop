@@ -1,3 +1,8 @@
+# Flags
+ro.droidx.maintainer= Ashwani
+ro.droidx.chipset=Snapdragon 4Gen2
+ro.droidx.display_resolution=6.67" IPS LCD 1080x2400
+
 # Bluetooth
 persist.vendor.btstack.enable.twsplus=true
 persist.vendor.btstack.enable.twsplussho=true
