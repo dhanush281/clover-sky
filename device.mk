@@ -398,7 +398,7 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
-    hardware/pixelage/interfaces/power-libperfmgr \
+    hardware/orion/interfaces/power-libperfmgr \
     hardware/google \
     hardware/google/interfaces \
     hardware/google/pixel \
@@ -532,14 +532,8 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     OuterTune
 
-# BCR
-$(call inherit-product, vendor/bcr/bcr.mk)
+# Dex
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 
 # Signed
 -include vendor/lineage-priv/keys/keys.mk
-
-# Viper4fx
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
-
-# Dex
-PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
